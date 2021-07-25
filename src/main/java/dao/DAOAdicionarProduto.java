@@ -30,7 +30,6 @@ public class AdicionarProduto extends ConnectionFactory{
             preparedStatement.setDouble(3,pr.getQuantidade());
             //Executa a operação no banco de dados
             preparedStatement.executeUpdate();
-            preparedStatement.executeQuery();
             //Confirma a operação junto o banco de dados
             confirmTransaction();
             //Recupera a chave PK da operação realiazada no banco de dados
