@@ -9,7 +9,7 @@ public class ConnectionFactory {
     private static Connection connection;
     private static String link = "jdbc:mysql://localhost:3306/one";
     private static String user = "root";
-    private static String password = "ale";
+    private static String password = "root";
 
     //O Construtor verifica se existe uma conexão com o banco de dados
     //Se não existir uma, ele fara uma.

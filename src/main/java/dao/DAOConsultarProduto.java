@@ -23,4 +23,15 @@ public class DAOConsultarProduto extends ConnectionFactory{
         rs.close();
         stm.close();
     }
+
+    public void ConsultarPreco(double preco) throws Exception{
+        Connection conn = getConnection();
+        Statement stm = conn.createStatement();
+        String query = "SELECT * FROM produto WHERE (preco >="+preco+")";
+        ResultSet rs = stm.executeQuery(query);
+        while (rs.next()){
+            System.out.println("Id: "+rs.getInt(1)+" Nome: "+rs.getString(2)
+                    +" Quantidade: "+rs.getInt(3)+" Preço R$"+rs.getDouble(4));
+        }
+    }
 }

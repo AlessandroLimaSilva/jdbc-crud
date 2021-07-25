@@ -27,7 +27,7 @@ public class DAOAdicionarProduto extends ConnectionFactory{
             //Passa o int quantidade para a query
             preparedStatement.setInt(2,pr.getQuantidade());
             //Passa o double preco para a query
-            preparedStatement.setDouble(3,pr.getQuantidade());
+            preparedStatement.setDouble(3,pr.getPreco());
             //Executa a operação no banco de dados
             preparedStatement.executeUpdate();
             //Confirma a operação junto o banco de dados
