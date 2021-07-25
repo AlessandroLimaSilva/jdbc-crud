@@ -1,8 +1,7 @@
 package controller;
 
-import dao.AdicionarProduto;
-import dao.ConnectionFactory;
-import dao.ConsultarTabela;
+import dao.DAOAdicionarProduto;
+import dao.DAOConsultarTabela;
 import model.Produto;
 
 public class ControllerMain {
@@ -10,8 +9,8 @@ public class ControllerMain {
     public static void main(String[] args) throws Exception {
 
         Produto pr = new Produto("playstation 5",10,4999.99);
-        AdicionarProduto ad = new AdicionarProduto(pr);
-        ConsultarTabela ct = new ConsultarTabela();
+        DAOAdicionarProduto ad = new DAOAdicionarProduto(pr);
+        DAOConsultarTabela ct = new DAOConsultarTabela();
         ct.ConsultarTudoId();
     }
 }
