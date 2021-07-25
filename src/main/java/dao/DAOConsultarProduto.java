@@ -5,11 +5,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class DAOConsultarTabela extends ConnectionFactory{
+public class DAOConsultarProduto extends ConnectionFactory{
 
     private final String tudoId = "SELECT * FROM produto ORDER BY id";
 
-    public DAOConsultarTabela() throws Exception {
+    public DAOConsultarProduto() throws Exception {
     }
 
     public void ConsultarTudoId() throws SQLException {

@@ -1,7 +1,7 @@
 package controller;
 
 import dao.DAOAdicionarProduto;
-import dao.DAOConsultarTabela;
+import dao.DAOConsultarProduto;
 import model.Produto;
 
 public class ControllerMain {
@@ -10,7 +10,7 @@ public class ControllerMain {
 
         Produto pr = new Produto("playstation 5",10,4999.99);
         DAOAdicionarProduto ad = new DAOAdicionarProduto(pr);
-        DAOConsultarTabela ct = new DAOConsultarTabela();
+        DAOConsultarProduto ct = new DAOConsultarProduto();
         ct.ConsultarTudoId();
     }
 }
