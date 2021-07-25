@@ -1,0 +1,17 @@
+CREATE DATABASE one;
+
+USE one;
+
+CREATE TABLE produto(
+	id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(200) NOT NULL,
+    quantidade INTEGER NOT NULL,
+    preco DOUBLE NOT NULL
+);    
+
+INSERT INTO produto(nome,quantidade,preco) VALUES ("Ryzen 2600X", 26, 999.90);
+INSERT INTO produto(nome,quantidade,preco) VALUES("Ryzen 2700X", 38,1111.25);
+INSERT INTO produto(nome,quantidade,preco) VALUES("Ryzen 2800X", 24, 1450.65);
+INSERT INTO produto(nome, quantidade, preco) VALUES("Ryzen 2900X", 36,1999.99);
+
+SELECT * FROM produto;
