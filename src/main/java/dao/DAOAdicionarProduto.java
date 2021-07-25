@@ -10,12 +10,12 @@ import java.sql.Statement;
 //Esta classe tem por objetivo adicionar um produto no banco de dados
 //this class aim to add one product in database
 
-public class AdicionarProduto extends ConnectionFactory{
+public class DAOAdicionarProduto extends ConnectionFactory{
 
     //Query que sera passada ao banco de dados
     private static String in = "INSERT INTO produto(nome,quantidade,preco) VALUES(?,?,?)";
 
-    public AdicionarProduto(Produto pr) throws Exception {
+    public DAOAdicionarProduto(Produto pr) throws Exception {
         try{
             //Abre a conexão com o banco de dados
             Connection conn = getConnection();
